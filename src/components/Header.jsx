@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Header({headingProps}) {
+function Header({head}) {
   return (
     <div>
       <div className="header">
-    <h1>{headingProps.head}</h1>
+    <h1>{head}</h1>
     </div>
     </div>
   )

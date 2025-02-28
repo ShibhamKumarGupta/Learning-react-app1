@@ -8,9 +8,7 @@ import "./App.css";
 function App() {
   const TopBarData = ["One", "Two", "Three", "Four", "Five"];
   const TopBarTitle = ["Yeti Agency", "Yeti Agency 2.0"];
-  const Heading = {
-    head: "Our Blog"
-  };
+ 
   const BlogData = [
     {
       blogtitle: "Awesome blog post title",
@@ -33,12 +31,12 @@ function App() {
   ];
   const Sidebartitle = ["Categories", "Author", "Another"];
   const SidebarData = ["Skyler", "Jesse", "Mike", "Holly"];
-  const PageNum = [2, 3, 4, "...", 7, 8, 12, 13, "Next"];
-
+  const PageNum = [1, 2, 3, 4, "...", 7, 8, 12, 13, "Next"]
+  
   return (
     <>
       <TopBar topbarProps={TopBarData} topbarProps2={TopBarTitle} />
-      <Header headingProps={Heading} />
+      <Header head="Our Blog" />
       <div className="container">
         <div className="row">
           <Blogs blogProps={BlogData} />
